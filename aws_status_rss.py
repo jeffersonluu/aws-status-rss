@@ -5,6 +5,7 @@ import os
 from datetime import datetime
 import github3
 
+owner = os.environ['GITHUB_ACTOR']
 
 pen = {}
 q = []
