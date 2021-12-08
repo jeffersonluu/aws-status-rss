@@ -17,7 +17,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install feedparser PyRSS2Gen github3
+        pip install feedparser PyRSS2Gen github3.py
 
     - name: Autobots Assemble
       run: python3 ./aws_status_rss.py
