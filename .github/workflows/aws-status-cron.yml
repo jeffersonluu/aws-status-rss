@@ -7,6 +7,9 @@ jobs:
   build:
     
     runs-on: ubuntu-latest
+    
+    env:
+      token: ${{ secrets.token }}
 
     steps:
     - uses: actions/checkout@v1
