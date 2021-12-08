@@ -9,7 +9,7 @@ owner = os.environ['GITHUB_ACTOR']
 
 pen = {}
 q = []
-feeds = [ 'https://status.aws.amazon.com/rss/management-console.rss', 'https://status.aws.amazon.com/rss/ec2-us-east-1.rss', 'https://status.aws.amazon.com/rss/supportcenter.rss' ]
+feeds = [ 'https://status.aws.amazon.com/rss/ecs-us-east-1.rss', 'https://status.aws.amazon.com/rss/elasticfilesystem-us-east-1.rss', 'https://status.aws.amazon.com/rss/elb-us-east-1.rss', 'https://status.aws.amazon.com/rss/rds-us-east-1.rss', 'https://status.aws.amazon.com/rss/route53.rss', 'https://status.aws.amazon.com/rss/ses-us-east-1.rss', 'https://status.aws.amazon.com/rss/sns-us-east-1.rss', 'https://status.aws.amazon.com/rss/s3-us-standard.rss', 'https://status.aws.amazon.com/rss/vpc-us-east-1.rss', 'https://status.aws.amazon.com/rss/autoscaling-us-east-1.rss', 'https://status.aws.amazon.com/rss/account.rss', 'https://status.aws.amazon.com/rss/certificatemanager-us-east-1.rss', 'https://status.aws.amazon.com/rss/cloudformation-us-east-1.rss', 'https://status.aws.amazon.com/rss/cloudtrail-us-east-1.rss', 'https://status.aws.amazon.com/rss/lambda-us-east-1.rss', 'https://status.aws.amazon.com/rss/management-console.rss', 'https://status.aws.amazon.com/rss/signin-us-east-1.rss' ]
 for feed in feeds:
     raw = feedparser.parse(feed)
     for e in raw['entries']:
