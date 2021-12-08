@@ -1,7 +1,8 @@
 name: AWS Status
   
-on: workflow_dispatch
-
+on:
+  schedule:
+    -   cron:  '20 * * * *'
 
 jobs:
   build:
